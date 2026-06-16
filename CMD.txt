@@ -1,0 +1,39 @@
+Install Streamlit
+
+python -m pip install streamlit
+
+----------------------------------------------------------
+
+Run Dashbord file
+python -m streamlit run dashboard.py \
+  --server.address 0.0.0.0 \
+  --server.port 8501 \
+  --server.enableCORS false \
+  --server.enableXsrfProtection false
+
+***Leave this turminal as running
+
+troubleshooting -> ps -ef | grep streamlit
+-----------------------------------------------
+
+https://notebooks.amd.com/jupyter-hack-team-2560-260613170603-7a564928/proxy/8501/
+
+
+------------------------
+pwd
+rocm-smi
+python -m pip show streamlit
+python -m pip show torch
+python -m pip install transformers accelerate sentencepiece
+pip install pydantic-ai
+python -m pip install sqlalchemy
+pkill -f streamlit
+python -m pip install -r requirements.txt
+--------------
+Required package
+pip install \
+streamlit \
+pandas \
+transformers \
+accelerate \
+sentencepiece
